@@ -66,6 +66,7 @@ class JavascriptLexer(RegexLexer):
              r'(<<|>>>?|==?|!=?|[-<>+*%&\|\^/])=?', Operator, 'slashstartsregex'),
             (r'[{(\[;,]', Punctuation, 'slashstartsregex'),
             (r'[})\].]', Punctuation),
+            (r'(this|window)(\.)', bygroups(Name.Builtin, Punctuation)),
             (r'(for|in|while|do|break|return|continue|switch|case|default|if|else|'
              r'throw|try|catch|finally|new|delete|typeof|instanceof|void|yield|'
              r'this)\b', Keyword, 'slashstartsregex'),
@@ -80,6 +81,9 @@ class JavascriptLexer(RegexLexer):
              r'decodeURIComponent|encodeURI|encodeURIComponent|'
              r'Error|eval|isFinite|isNaN|parseFloat|parseInt|document|this|'
              r'window)\b', Name.Builtin),
+            (r'[A-Z][a-zA-Z0-9_]*', Name.Class),
+            (r'([a-zA-Z_][a-zA-Z0-9_]*)(\s*)(\()', bygroups(Name.Method, Text, Punctuation)),
+            (r'[$a-zA-Z_][a-zA-Z0-9_]*\:', Name.Function),
             (r'[$a-zA-Z_][a-zA-Z0-9_]*', Name.Other),
             (r'[0-9][0-9]*\.[0-9]+([eE][0-9]+)?[fd]?', Number.Float),
             (r'0x[0-9a-fA-F]+', Number.Hex),
