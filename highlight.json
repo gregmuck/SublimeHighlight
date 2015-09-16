@@ -3,9 +3,15 @@
 
 	"packages": [
 		{
-			"name": "Highlight",
+			"name": "My Highlight",
 			"details": "https://github.com/gregmuck/SublimeHighlight/tree/python3",
 			"labels": ["language syntax"]
+			"releases": [
+				{
+					"sublime_text": "*",
+					"tags": true
+				}
+			]
 		}
 	]
 }
