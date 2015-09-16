@@ -1,4 +1,17 @@
-	"repositories":
-	[
-		"https://github.com/gregmuck/SublimeHighlight/tree/python3/repository.json"
+{
+	"schema_version": "3.0.0",
+
+	"packages": [
+		{
+			"name": "Highlight",
+			"details": "https://github.com/gregmuck/SublimeHighlight/tree/python3",
+			"labels": ["language syntax"],
+			"releases": [
+				{
+					"sublime_text": "*",
+					"branch": "python3"
+				}
+			]
+		}
 	]
+}
