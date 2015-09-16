@@ -1,0 +1,17 @@
+{
+	"schema_version": "3.0.0",
+
+	"packages": [
+		{
+			"name": "My Highlight",
+			"details": "https://github.com/gregmuck/SublimeHighlight/tree/python3",
+			"labels": ["language syntax"]
+			"releases": [
+				{
+					"sublime_text": "*",
+					"tags": true
+				}
+			]
+		}
+	]
+}
