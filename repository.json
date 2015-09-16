@@ -4,7 +4,7 @@
 	"packages": [
 		{
 			"name": "Highlight",
-			"details": "https://github.com/jimhawkridge/SublimeABC",
+			"details": "https://github.com/gregmuck/SublimeHighlight/tree/python3",
 			"labels": ["language syntax"],
 			"releases": [
 				{
